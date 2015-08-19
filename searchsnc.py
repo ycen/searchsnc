@@ -65,8 +65,9 @@ def findproduct(wants):
 def main():
 	args = sys.argv[1:]
 	if not args:
-		args.append('nothing')
-	findproduct(args)
+		print 'nothing to search.'
+	else:	
+		findproduct(args)
 
 if __name__ == '__main__':
 	main()
